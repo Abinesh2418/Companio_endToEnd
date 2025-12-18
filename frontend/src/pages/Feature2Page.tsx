@@ -1,26 +1,26 @@
 import React from 'react'
 import SubFeatureCard from '../components/SubFeatureCard'
-import { Battery, Zap, Wind, Wifi, Cpu, Network, Gauge, Settings } from 'lucide-react'
+import { Target, Zap, Wind, Wifi, Cpu, Network, Gauge, Settings } from 'lucide-react'
 import './FeaturePage.css'
 
 const Feature2Page: React.FC = () => {
   const subFeatures = [
     {
       id: 1,
-      title: 'Sub Feature 1',
-      description: 'Monitor system performance and resource utilization in real-time.',
-      icon: <Battery size={24} />,
+      title: 'Goal Creation & Planning',
+      description: 'Transform your aspirations into structured, actionable plans with clear timelines.',
+      icon: <Target size={24} />,
     },
     {
       id: 2,
-      title: 'Sub Feature 2',
-      description: 'Optimize energy consumption with intelligent power management.',
+      title: 'Intelligent Task Breakdown & Customization',
+      description: 'Automatically decompose goals into structured tasks and customize them.',
       icon: <Zap size={24} />,
     },
     {
       id: 3,
-      title: 'Sub Feature 3',
-      description: 'Control and manage network connectivity with ease.',
+      title: 'Smart Proactive Productivity & Motivation',
+      description: 'Context-aware reminders and motivation system to reduce procrastination.',
       icon: <Wind size={24} />,
     },
     {
@@ -34,24 +34,6 @@ const Feature2Page: React.FC = () => {
       title: 'Sub Feature 5',
       description: 'Access processor information and performance metrics.',
       icon: <Cpu size={24} />,
-    },
-    {
-      id: 6,
-      title: 'Sub Feature 6',
-      description: 'Manage network protocols and connectivity options.',
-      icon: <Network size={24} />,
-    },
-    {
-      id: 7,
-      title: 'Sub Feature 7',
-      description: 'Track performance gauges and system health indicators.',
-      icon: <Gauge size={24} />,
-    },
-    {
-      id: 8,
-      title: 'Sub Feature 8',
-      description: 'Fine-tune system preferences and advanced configurations.',
-      icon: <Settings size={24} />,
     },
   ]
 

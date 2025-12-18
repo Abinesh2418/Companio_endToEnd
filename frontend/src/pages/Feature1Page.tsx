@@ -35,24 +35,6 @@ const Feature1Page: React.FC = () => {
       description: 'Integrate seamlessly with your favorite tools and platforms.',
       icon: <Rocket size={24} />,
     },
-    {
-      id: 6,
-      title: 'Sub Feature 6',
-      description: 'Protect your data with enterprise-grade security features.',
-      icon: <Shield size={24} />,
-    },
-    {
-      id: 7,
-      title: 'Sub Feature 7',
-      description: 'Achieve excellence with premium quality and performance metrics.',
-      icon: <Star size={24} />,
-    },
-    {
-      id: 8,
-      title: 'Sub Feature 8',
-      description: 'Track growth and success with comprehensive analytics dashboard.',
-      icon: <TrendingUp size={24} />,
-    },
   ]
 
   return (

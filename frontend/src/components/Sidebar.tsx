@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Grid2X2, Zap } from 'lucide-react'
+import { useAuth } from '../context/AuthContext'
 import './Sidebar.css'
 
 interface SidebarProps {
@@ -10,13 +11,9 @@ interface SidebarProps {
 }
 
 const Sidebar: React.FC<SidebarProps> = ({ currentPath, isOpen }) => {
+  const { user } = useAuth()
+  
   const navigationItems = [
-    {
-      id: 'feature1',
-      label: 'Feature 1',
-      path: '/feature1',
-      icon: Grid2X2,
-    },
     {
       id: 'feature2',
       label: 'Feature 2',
@@ -54,10 +51,12 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPath, isOpen }) => {
 
       <div className="sidebar-footer">
         <div className="sidebar-user">
-          <div className="user-avatar">U</div>
+          <div className="user-avatar">
+            {user?.username?.charAt(0).toUpperCase() || 'U'}
+          </div>
           <div className="user-info">
-            <p className="user-name">User</p>
-            <p className="user-email">user@example.com</p>
+            <p className="user-name">{user?.username || 'User'}</p>
+            <p className="user-email">{user?.email || 'user@example.com'}</p>
           </div>
         </div>
       </div>

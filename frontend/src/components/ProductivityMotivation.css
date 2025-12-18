@@ -1,0 +1,533 @@
+.productivity-motivation {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.productivity-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.productivity-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.dark-mode .productivity-header h1 {
+  color: #f9fafb;
+}
+
+.productivity-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.dark-mode .productivity-header p {
+  color: #d1d5db;
+}
+
+.productivity-loading {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.dark-mode .productivity-loading {
+  color: #9ca3af;
+}
+
+/* Tabs */
+.productivity-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.dark-mode .productivity-tabs {
+  border-bottom-color: #374151;
+}
+
+.tab-button {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s;
+}
+
+.dark-mode .tab-button {
+  color: #9ca3af;
+}
+
+.tab-button:hover {
+  color: #4a90e2;
+}
+
+.dark-mode .tab-button:hover {
+  color: #60a5fa;
+}
+
+.tab-button.active {
+  color: #4a90e2;
+  border-bottom-color: #4a90e2;
+}
+
+.dark-mode .tab-button.active {
+  color: #60a5fa;
+  border-bottom-color: #60a5fa;
+}
+
+/* Current Date/Time Display */
+.current-datetime-display {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.datetime-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+}
+
+.datetime-icon {
+  font-size: 1.5rem;
+}
+
+.datetime-label {
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.datetime-value {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary, .btn-analyze {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(245, 87, 108, 0.4);
+}
+
+.btn-analyze {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+  color: white;
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(238, 90, 111, 0.4);
+}
+
+.btn-analyze:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(79, 172, 254, 0.4);
+}
+
+/* Reminders */
+.reminders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reminder-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.dark-mode .reminder-card {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.reminder-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode .reminder-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.reminder-card.seen {
+  opacity: 0.7;
+  background: #f8f9fa;
+}
+
+.dark-mode .reminder-card.seen {
+  background: #374151;
+}
+
+.reminder-card.new-reminder {
+  border: 2px solid #667eea;
+  background: linear-gradient(135deg, #f5f7ff 0%, #ffffff 100%);
+}
+
+.reminder-card.new-reminder::before {
+  content: '🆕';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+}
+
+.reminder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.reminder-type {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.dark-mode .reminder-type {
+  color: #f9fafb;
+}
+
+.reminder-timestamp {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f5f5f5;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.dark-mode .reminder-timestamp {
+  color: #9ca3af;
+  background: #374151;
+}
+
+.timestamp-icon {
+  font-size: 1rem;
+}
+
+.reminder-time {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.dark-mode .reminder-time {
+  color: #9ca3af;
+}
+
+.reminder-message {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  white-space: pre-line;
+}
+
+.dark-mode .reminder-message {
+  color: #d1d5db;
+}
+
+.reminder-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.btn-action, .btn-dismiss {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-action {
+  background: #10b981;
+  color: white;
+}
+
+.btn-action:hover {
+  background: #059669;
+}
+
+.btn-dismiss {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-dismiss:hover {
+  background: #dc2626;
+}
+
+.status-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-badge.seen {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.dismissed {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-badge.pending {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.dark-mode .empty-state {
+  color: #9ca3af;
+}
+
+.empty-state p:first-child {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Insights Section */
+.insights-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.insight-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .insight-card {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.insight-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.dark-mode .insight-card h3 {
+  color: #f9fafb;
+}
+
+.hours-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.hour-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.hour-badge.productive {
+  background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+  color: #064e3b;
+}
+
+.hour-badge.low-energy {
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+  color: #1e3a8a;
+}
+
+.insight-note {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.dark-mode .insight-note {
+  color: #9ca3af;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* Recommendations */
+.recommendation {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.dark-mode .recommendation {
+  background: #374151;
+}
+
+.recommendation strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.dark-mode .recommendation strong {
+  color: #f9fafb;
+  color: #1a1a1a;
+}
+
+.recommendation p {
+  color: #666;
+  margin: 0;
+}
+
+.badge-yes {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #d1fae5;
+  color: #065f46;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.badge-no {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .productivity-motivation {
+    padding: 1rem;
+  }
+
+  .productivity-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .btn-primary, .btn-secondary, .btn-analyze {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .productivity-tabs {
+    gap: 0.5rem;
+  }
+
+  .tab-button {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+}
