@@ -4,8 +4,8 @@ Rule-based logic to decompose goals into structured weekly and daily tasks.
 """
 
 from typing import List, Dict, Any
-from models.goal import GoalResponse
-from models.task import Task
+from features.goals.models import GoalResponse
+from features.tasks.models import Task
 
 
 class TaskDecomposer:

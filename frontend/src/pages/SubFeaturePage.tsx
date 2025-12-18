@@ -3,6 +3,7 @@ import { useParams, useNavigate, useLocation } from 'react-router-dom'
 import { ArrowLeft } from 'lucide-react'
 import GoalsManagement from '../components/GoalsManagement.tsx'
 import TaskBreakdown from '../components/TaskBreakdown.tsx'
+import ProductivityMotivation from '../components/ProductivityMotivation.tsx'
 import './SubFeaturePage.css'
 
 const SubFeaturePage: React.FC = () => {
@@ -49,11 +50,13 @@ const SubFeaturePage: React.FC = () => {
         </div>
 
         <div className="sub-feature-body">
-          {/* Feature 2 - Goal Creation & Planning */}
+          {/* Feature 2 - Sub Features */}
           {featureId === 'feature2' && (subFeatureId === 'sub-feature-1' || subFeatureId === 'goal-creation-&-planning') ? (
             <GoalsManagement />
           ) : featureId === 'feature2' && (subFeatureId === 'sub-feature-2' || subFeatureId === 'intelligent-task-breakdown' || subFeatureId === 'intelligent-task-breakdown-&-customization') ? (
             <TaskBreakdown />
+          ) : featureId === 'feature2' && (subFeatureId === 'sub-feature-3' || subFeatureId === 'smart-proactive-productivity-&-motivation') ? (
+            <ProductivityMotivation />
           ) : (
             <div className="placeholder-message">
               <h2>Update the {subFeatureTitle} work here</h2>

@@ -14,9 +14,17 @@
   margin-bottom: 0.5rem;
 }
 
+.dark-mode .task-breakdown-header h1 {
+  color: #f9fafb;
+}
+
 .subtitle {
   color: #7f8c8d;
   font-size: 1rem;
+}
+
+.dark-mode .subtitle {
+  color: #9ca3af;
 }
 
 /* Goal Selection */
@@ -32,9 +40,18 @@
   flex-wrap: wrap;
 }
 
+.dark-mode .goal-selection-section {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .goal-selection-section label {
   font-weight: 600;
   color: #2c3e50;
+}
+
+.dark-mode .goal-selection-section label {
+  color: #f9fafb;
 }
 
 .goal-select {
@@ -45,6 +62,14 @@
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s;
+  background: white;
+  color: #2c3e50;
+}
+
+.dark-mode .goal-select {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f9fafb;
 }
 
 .goal-select:focus {
@@ -152,11 +177,21 @@
   margin-bottom: 1rem;
 }
 
+.dark-mode .error-message {
+  background: #7f1d1d;
+  border-left-color: #ef4444;
+  color: #fecaca;
+}
+
 .loading {
   text-align: center;
   padding: 2rem;
   font-size: 1.2rem;
   color: #7f8c8d;
+}
+
+.dark-mode .loading {
+  color: #9ca3af;
 }
 
 /* Tasks Section */
@@ -165,6 +200,11 @@
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .tasks-section {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .tasks-header {
@@ -178,9 +218,17 @@
   gap: 1rem;
 }
 
+.dark-mode .tasks-header {
+  border-bottom-color: #374151;
+}
+
 .tasks-header h2 {
   color: #2c3e50;
   margin: 0;
+}
+
+.dark-mode .tasks-header h2 {
+  color: #f9fafb;
 }
 
 .task-actions {
@@ -197,10 +245,19 @@
   border: 2px solid #e0e0e0;
 }
 
+.dark-mode .add-task-form {
+  background: #374151;
+  border-color: #4b5563;
+}
+
 .add-task-form h3 {
   margin-top: 0;
   margin-bottom: 1rem;
   color: #2c3e50;
+}
+
+.dark-mode .add-task-form h3 {
+  color: #f9fafb;
 }
 
 .input-field,
@@ -212,6 +269,15 @@
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s;
+  background: white;
+  color: #2c3e50;
+}
+
+.dark-mode .input-field,
+.dark-mode .textarea-field {
+  background: #1f2937;
+  border-color: #4b5563;
+  color: #f9fafb;
 }
 
 .input-field:focus,
@@ -243,6 +309,10 @@
   border-radius: 8px;
 }
 
+.dark-mode .week-section {
+  background: #374151;
+}
+
 .week-title {
   color: #2c3e50;
   margin-top: 0;
@@ -250,6 +320,11 @@
   font-size: 1.3rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #3498db;
+}
+
+.dark-mode .week-title {
+  color: #f9fafb;
+  border-bottom-color: #60a5fa;
 }
 
 /* Tasks List */
@@ -273,14 +348,27 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+.dark-mode .task-card {
+  background: #1f2937;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .task-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
 }
 
+.dark-mode .task-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
 .task-locked {
   opacity: 0.6;
   background: #f5f5f5;
+}
+
+.dark-mode .task-locked {
+  background: #374151;
 }
 
 .task-card.status-not-started {
@@ -292,9 +380,17 @@
   background: #fffbf0;
 }
 
+.dark-mode .task-card.status-in-progress {
+  background: #422006;
+}
+
 .task-card.status-completed {
   border-left-color: #27ae60;
   background: #f0fff4;
+}
+
+.dark-mode .task-card.status-completed {
+  background: #064e3b;
 }
 
 .task-reorder-controls {
@@ -318,6 +414,10 @@
 .task-title {
   margin: 0;
   color: #2c3e50;
+}
+
+.dark-mode .task-title {
+  color: #f9fafb;
   font-size: 1.1rem;
 }
 
@@ -327,12 +427,24 @@
   font-size: 0.9rem;
 }
 
+.dark-mode .task-description {
+  color: #9ca3af;
+}
+
 .edit-input {
   padding: 0.5rem;
   border: 2px solid #3498db;
   border-radius: 4px;
   font-size: 1rem;
   width: 100%;
+  background: white;
+  color: #2c3e50;
+}
+
+.dark-mode .edit-input {
+  background: #374151;
+  border-color: #60a5fa;
+  color: #f9fafb;
 }
 
 .edit-textarea {
@@ -343,6 +455,14 @@
   width: 100%;
   min-height: 60px;
   resize: vertical;
+  background: white;
+  color: #2c3e50;
+}
+
+.dark-mode .edit-textarea {
+  background: #374151;
+  border-color: #60a5fa;
+  color: #f9fafb;
 }
 
 .task-meta {
@@ -363,9 +483,19 @@
   color: #7f8c8d;
 }
 
+.dark-mode .task-status.status-not-started {
+  background: #4b5563;
+  color: #d1d5db;
+}
+
 .task-status.status-in-progress {
   background: #ffe4b3;
   color: #d68910;
+}
+
+.dark-mode .task-status.status-in-progress {
+  background: #78350f;
+  color: #fde68a;
 }
 
 .task-status.status-completed {
@@ -373,11 +503,21 @@
   color: #155724;
 }
 
+.dark-mode .task-status.status-completed {
+  background: #064e3b;
+  color: #6ee7b7;
+}
+
 .task-dependencies {
   padding: 0.25rem 0.75rem;
   background: #e3f2fd;
   color: #1976d2;
   border-radius: 20px;
+}
+
+.dark-mode .task-dependencies {
+  background: #1e3a8a;
+  color: #93c5fd;
   font-size: 0.85rem;
 }
 

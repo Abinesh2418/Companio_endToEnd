@@ -19,8 +19,8 @@ const Feature2Page: React.FC = () => {
     },
     {
       id: 3,
-      title: 'Sub Feature 3',
-      description: 'Control and manage network connectivity with ease.',
+      title: 'Smart Proactive Productivity & Motivation',
+      description: 'Context-aware reminders and motivation system to reduce procrastination.',
       icon: <Wind size={24} />,
     },
     {

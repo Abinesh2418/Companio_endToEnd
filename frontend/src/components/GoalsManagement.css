@@ -159,6 +159,10 @@
   margin-bottom: 8px;
 }
 
+.dark-mode .form-label {
+  color: #f9fafb !important;
+}
+
 .required {
   color: #ef4444;
 }
@@ -174,6 +178,13 @@
   border-radius: 8px;
   transition: all 0.2s ease;
   font-family: inherit;
+}
+
+.dark-mode .form-input,
+.dark-mode .form-select {
+  color: #f9fafb !important;
+  background-color: #374151 !important;
+  border-color: #4b5563 !important;
 }
 
 .form-input:focus,
